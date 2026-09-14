@@ -3,13 +3,20 @@ package org.firstinspires.ftc.teamcode.Tele;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.hardware.DcMotor;
+
+import java.nio.Buffer;
 
 @Disabled
 @TeleOp
 public class GamePadPractice extends OpMode {
 
+
+
+
     @Override
     public void init() {
+
 
     }
 
@@ -29,7 +36,7 @@ public class GamePadPractice extends OpMode {
         telemetry.addData("b button", gamepad1.b);
 
         telemetry.addData("sum triggers", sumTriggers);
-
+        
     }
 
 
