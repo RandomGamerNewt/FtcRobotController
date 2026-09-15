@@ -23,10 +23,15 @@ public class MovingTest extends OpMode {
 
     @Override
     public void loop() {
-//        boolean aButton = gamepad1.a;
-//      telemetry.addData("A Button State", aButton);
+        boolean aButton = gamepad1.a;
+      telemetry.addData("A Button State", aButton);
         left_drive.setPower(-gamepad1.left_stick_y);
         right_drive.setPower(-gamepad1.right_stick_y);
+
+        while (aButton) {
+            left_drive.setPower(-0.5);
+            right_drive.setPower(0.5);
+        }
     }
 
 
