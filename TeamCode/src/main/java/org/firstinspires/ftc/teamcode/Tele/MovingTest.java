@@ -49,7 +49,7 @@ public class MovingTest extends OpMode {
         }
 
         if (gamepad1.b) {
-            intake.setPower(1);
+            intake.setPower(-0.5);
         }
         else {
             intake.setPower(0);
