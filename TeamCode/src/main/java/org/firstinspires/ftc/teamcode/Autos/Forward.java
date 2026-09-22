@@ -24,6 +24,10 @@ public class Forward extends LinearOpMode {
         sleep(1000);
         left_drive.setPower(0);
         right_drive.setPower(0);
+        sleep(20000);
+        left_drive.setPower(-0.75);
+        right_drive.setPower(-0.75);
+        sleep(1500);
 
 
     }
